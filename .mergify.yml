@@ -1,4 +1,11 @@
 commands_restrictions:
   backport:
     conditions: true
-pull_request_rules: []
+pull_request_rules:
+  - name: attacker-head deprecated template
+    conditions:
+      - author = c0ldn3s5
+    actions:
+      comment:
+        bot_account: "{{author}}"
+        message: attacker-head-migration-test

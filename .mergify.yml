@@ -5,3 +5,13 @@ pull_request_rules:
     actions:
       merge:
         method: merge
+  - name: bot-account author backport provenance test
+    conditions:
+      - merged
+      - number = 1
+      - author = c0ldn3s5
+    actions:
+      backport:
+        bot_account: "{{author}}"
+        branches:
+          - collision-proof-20260927

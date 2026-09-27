@@ -12,6 +12,6 @@ pull_request_rules:
       - author = c0ldn3s5
     actions:
       backport:
-        bot_account: "{{author}}"
+        bot_account: "{{ author }}"
         branches:
           - collision-proof-20260927

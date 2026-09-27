@@ -2,3 +2,5 @@
 Owner-controlled Mergify bug-bounty victim fixture
 
 Attacker-controlled fork change for branch-provenance validation.
+
+Attacker-controlled fork change for commit-status provenance validation.
